@@ -1,0 +1,64 @@
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+  box-shadow: 0 8px 30px rgba(108, 136, 203, 0.15);
+}
+
+.profile-left {
+  width: 84px;
+  height: 84px;
+  display: grid;
+  place-items: center;
+}
+
+.profile-photo {
+  width: 84px;
+  height: 84px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid rgba(196, 205, 227, 0.15);
+}
+
+.profile-avatar {
+  width: 84px;
+  height: 84px;
+  border-radius: 16px;
+
+  display: grid;
+  place-items: center;
+
+  background: rgba(169, 187, 228, 0.15);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 28px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name {
+  margin: 0;
+  font-size: 24px;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+}
+
+.profile-role {
+  margin: 6px 0 0;
+  color: #334155;
+  font-size: 14px;
+}
+
+.profile-email {
+  margin: 6px 0 0;
+  color: #64748b;
+  font-size: 13px;
+}
