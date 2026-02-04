@@ -1,21 +1,18 @@
 import "./ProfileCard.css";
+import profileImg from "../assets/profilepic.png"; 
 
-export default function ProfileCard({ name, role, email, photo }) {
+export default function ProfileCard({ name, role, email }) {
   return (
     <div className="profile-card">
-      <div className="profile-left">
-        {photo ? (
-          <img className="profile-photo" src={photo} alt={`${name} profile`} />
-        ) : (
-          <div className="profile-avatar">{name?.charAt(0)}</div>
-        )}
-      </div>
+      <img
+        src={profileImg}
+        alt="Profile"
+        className="profile-avatar"
+      />
 
-      <div className="profile-info">
-        <h1 className="profile-name">{name}</h1>
-        <p className="profile-role">{role}</p>
-        <p className="profile-email">{email}</p>
-      </div>
+      <h1>{name}</h1>
+      <p>{role}</p>
+      <p>{email}</p>
     </div>
   );
 }
